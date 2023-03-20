@@ -1,0 +1,4 @@
+{
+  "ext": "ts",
+  "exec": "node -r ts-node/register --inspect -- src/server.ts"
+}

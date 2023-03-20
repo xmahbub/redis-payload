@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    command:
+      - --storageEngine=wiredTiger
+    volumes:
+      - data:/data/db
+    logging:
+      driver: none
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+volumes:
+  data:
+  node_modules:
